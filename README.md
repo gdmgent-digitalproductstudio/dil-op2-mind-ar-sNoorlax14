@@ -1,3 +1,6 @@
+Ik koos de Album Cover AR Experience uit de suggesties.
+Specifiek maakte ik deze opdracht rond het album 'The End of Us' van TX2.
+
 Voor de face tracking heb ik anchorIndex 168 gekozen omdat het middelpunt van het 3D model van het haar ongeveer op deze plek ligt om juist mee te bewegen met de beweging van een hoofd, hetzelfde geld voor het schedel 3D model.
 
 Bronnen:
