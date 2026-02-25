@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="scripts/face.js"></script>
+    <link rel="stylesheet" href="css/face.css">
+    <title>Face Tracker</title>
+  </head>
+  <body>
+    <a-scene class="scene"
+      mindar-face
+      embedded
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-assets>
+        <a-asset-item
+          id="hairModel"
+          src="assets/hair.glb"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="flamesModel"
+          src="assets/flame.glb"
+        ></a-asset-item>
+
+
+      </a-assets>
+
+      <a-camera active="false" position="0 0 0" look-controls="enabled: false"></a-camera>
+
+
+
+      <a-entity mindar-face-target="anchorIndex: 168">
+        <a-gltf-model
+          id="mainModel"
+          rotation="0 0 0"
+          position="0 -9.9 -0.5"
+          scale="1.25 1.25 1.25"
+          src="#hairModel"
+        ></a-gltf-model>
+      </a-entity>
+    </a-scene>
+    <a id="toggleButton" href="#">???</a>
+    <iframe id="flamesAudio" src="https://open.spotify.com/embed/track/7is5iA2YRZhYALdJ5LN8Le?utm_source=generator&autoplay=1" width="600" height="160" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </body>
+</html>
