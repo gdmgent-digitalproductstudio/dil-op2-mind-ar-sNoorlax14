@@ -6,4 +6,4 @@ Haar model: https://sketchfab.com/3d-models/anime-male-hair-8ac6702e80fc4ba68dcb
 Schedel model: https://sketchfab.com/3d-models/flame-test-e87b4e7dfb3d4e1a8118a79baa0ac39d
 Gitaar model:https://sketchfab.com/3d-models/electric-guitar-lowpoly-model-a157e3341d2d476e9c40299c79cfeafc
 
-
+Font: https://fonts.google.com/specimen/New+Rocker
